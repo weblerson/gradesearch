@@ -1,0 +1,108 @@
+*{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+html{}
+html body{
+    background-color: #0e1117;
+}
+html body header{}
+
+html body main{}
+html body main section{
+    display: flex;
+}
+html body main section .slider{
+    position: absolute;
+    height: 100vh;
+    width: 350px;
+    background-color: #262730;
+    z-index: 1;
+    /*margin-left: -360px*/
+    transition: 0.9s;
+}
+.hide{
+    height: 20px;
+    width: 30px;
+    margin-left: 90%;
+    margin-top: 5%;
+    color: white;
+    font-family: FreeMono, monospace;
+    cursor: pointer;
+}
+html body main section .slider .hide span{
+    margin-left: 20%;
+}
+
+html body main section .slider h1{
+    display: block;
+    margin-left: 5%;
+    margin-top: 30%;
+}
+.slider--item{
+    font-family: FreeMono, monospace;
+    display: block;
+    color: white;
+    margin-left: 5%;
+}
+
+.slider--item--input{
+    display: block;
+    font-family: FreeMono, monospace;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 90%;
+    background-color: #0e1117;
+    margin-left: 5%;
+}
+
+.slider--item--submit{
+    display: block;
+    color: white;
+    height: 5%;
+    width: 15%;
+    background-color: #262730;
+    border: solid;
+    border-radius: 5px;
+    border-color: grey;
+    border-width: 1px;
+    margin-left: 5%;
+}
+
+.slider--item--input:hover{
+    border: solid;
+    border-width: 1px;
+    border-color: #ff4b4b;
+}
+
+.slider--item--submit:hover{
+    border-color: #ff4b4b;
+    color: #ff4b4b;
+    cursor: pointer;
+}
+
+html body main section .page{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+html body main section .page .show{
+    font-family: FreeMono, monospace;
+    color: white;
+    height: 20px;
+    width: 30px;
+    border: solid;
+    border-color: #262730;
+    border-radius: 10%;
+    background-color: #262730;
+    margin: 15px 15px 15px 15px;
+    cursor: pointer;
+}
+html body main section .page .show span{
+    margin-left: 10px;
+}
+
+html body footer{}
