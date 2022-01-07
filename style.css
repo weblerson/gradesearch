@@ -1,0 +1,160 @@
+*{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+html{}
+html body{
+    background-color: #0e1117;
+}
+html body header{
+    font-family: FreeMono, monospace;
+    color: white;
+}
+
+html body main{}
+html body main section{
+    display: flex;
+}
+.slider{
+    position: absolute;
+    border-right: solid;
+    border-color: #ff4b4b;
+    height: 100vh;
+    width: 350px;
+    background-color: #262730;
+    box-shadow: 10px 10px 10px 2px #0e1117;
+    z-index: 1;
+    margin-left: -360px;
+    transition: 0.9s;
+}
+.hide{
+    height: 20px;
+    width: 30px;
+    margin-left: 90%;
+    margin-top: 5%;
+    border-radius: 10%;
+    color: white;
+    font-family: FreeMono, monospace;
+    cursor: pointer;
+}
+
+.hide:hover{
+    background-color: #0e1117;
+}
+
+html body main section .slider .hide span{
+    margin-left: 30%;
+}
+
+html body main section .slider h1{
+    display: block;
+    margin-left: 5%;
+    margin-top: 30%;
+}
+.slider--item{
+    font-family: FreeMono, monospace;
+    display: block;
+    color: white;
+    margin-left: 5%;
+}
+
+.slider--item--input{
+    display: block;
+    font-family: FreeMono, monospace;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 90%;
+    background-color: #0e1117;
+    margin-left: 5%;
+}
+
+.slider--item--submit{
+    display: block;
+    color: white;
+    height: 5%;
+    width: 30%;
+    background-color: #262730;
+    border: solid;
+    border-radius: 5px;
+    border-color: grey;
+    border-width: 1px;
+    margin-left: 5%;
+}
+
+.slider--item--input:hover{
+    border: solid;
+    border-width: 1px;
+    border-color: #ff4b4b;
+}
+
+.slider--item--submit:hover{
+    border-color: #ff4b4b;
+    color: #ff4b4b;
+    cursor: pointer;
+}
+
+.page{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+.show{
+    font-family: FreeMono, monospace;
+    color: white;
+    height: 20px;
+    width: 30px;
+    border: solid;
+    border-color: #262730;
+    border-radius: 10%;
+    background-color: #262730;
+    margin: 15px 15px 15px 15px;
+    cursor: pointer;
+}
+html body main section .page .show span{
+    margin-left: 10px;
+}
+
+.text{
+    margin: 20px;
+    font-family: FreeMono, monospace;
+    color: white;
+}
+
+.text--center{
+    font-family: FreeMono, monospace;
+    color: white;
+    text-align: center;
+}
+
+.text--justify{
+    margin: 20px;
+    font-family: FreeMono, monospace;
+    color: white;
+    text-align: justify;
+}
+
+.text--border{
+    margin: 20px;
+    background-color: #1a1c23;
+    border: 1px solid #ff4b4b;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.border{
+    height: 150px;
+    width: 400px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+html body footer{}

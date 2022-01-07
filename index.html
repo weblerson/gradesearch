@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang = "pt-br">
+    <head>
+        <title>GradeSearch - 1.0</title>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1" charset = "UTF-8">
+        <link rel = "stylesheet" href = "style.css">
+        <script src = "functions/scrap.js"></script>
+        <script src = "script.js"></script>
+    </head>
+
+    <body>
+        <main>
+            <section>
+                <div class = "slider">
+                    <div class = "hide" onclick = "document.querySelector('.slider').style.marginLeft = '-360px'">
+                        <span><</span>
+                    </div>
+
+                    <h1 class = "slider--item">GradeSearch - 1.0</h1>
+                    <h2 class = "slider--item">Login:</h2>
+
+                    <br><br>
+
+                    <span class = "slider--item">RA:</span><br>
+                    <input class = "slider--item--input" id = "RA" type = "number" min = 0>
+
+                    <br><br>
+
+                    <span class = "slider--item">Senha:</span><br>
+                    <input class = "slider--item--input" id = "Password" type = "password">
+                    
+                    <br><br>
+
+                    <button class = "slider--item--submit" onclick = "Scrap()">Login</button>
+                </div>
+
+                <div class = "page">
+                    <div class = "show" onclick = "document.querySelector('.slider').style.marginLeft = '0px'">
+                        <span>></span>
+                    </div>
+
+                    <h1 class = "text--center">Seja bem-vindo ao GradeSearch</h1><br>
+                    <div class = "text--border">
+                        <p class = "text--justify">
+                            Basta preencher os campos do slider com seu RA e senha, realizar o login e o nosso bot 
+                            pegará todas as informações úteis diretamente do portal e fará os cálculos necessários. 
+                            Caso o slider não esteja aparecendo, basta clicar no botão no canto superior esquerdo.
+                        </p>
+                    </div>
+
+                    <span class = "text--center" id = "username"></span>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
